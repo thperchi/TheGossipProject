@@ -1,0 +1,8 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"><%= @gossip.user.first_name %> <%= @gossip.user.last_name %></h1>
+        <h2 class="display-4"><%= @gossip.title %></h2>
+        <p class="lead"><%= @gossip.content %></p>
+        <%= link_to "Profil de l'auteur", author_path(@gossip.user.id), class: "btn btn-primary btn-lg"%>
+    </div>
+</div>
